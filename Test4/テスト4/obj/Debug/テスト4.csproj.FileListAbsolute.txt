@@ -1,0 +1,10 @@
+C:\Users\KSaihara\source\repos\テスト4\テスト4\bin\Debug\テスト4.exe.config
+C:\Users\KSaihara\source\repos\テスト4\テスト4\bin\Debug\テスト4.exe
+C:\Users\KSaihara\source\repos\テスト4\テスト4\bin\Debug\テスト4.pdb
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.csprojAssemblyReference.cache
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.Main.resources
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.Properties.Resources.resources
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.csproj.GenerateResource.cache
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.csproj.CoreCompileInputs.cache
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.exe
+C:\Users\KSaihara\source\repos\テスト4\テスト4\obj\Debug\テスト4.pdb
