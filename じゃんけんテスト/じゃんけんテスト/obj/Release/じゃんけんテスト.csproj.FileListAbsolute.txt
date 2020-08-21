@@ -1,0 +1,9 @@
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\bin\Release\じゃんけんテスト.exe.config
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\bin\Release\じゃんけんテスト.exe
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\bin\Release\じゃんけんテスト.pdb
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.JyankenTest1.resources
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.Properties.Resources.resources
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.csproj.GenerateResource.cache
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.csproj.CoreCompileInputs.cache
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.exe
+C:\Users\KSaihara\source\repos\じゃんけんテスト\じゃんけんテスト\obj\Release\じゃんけんテスト.pdb
