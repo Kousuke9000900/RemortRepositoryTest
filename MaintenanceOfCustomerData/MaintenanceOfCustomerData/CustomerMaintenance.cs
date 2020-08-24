@@ -24,7 +24,12 @@ namespace MaintenanceOfCustomerData
         /// <param name="e"></param>
         private void CustomerMaintenance_Load(object sender, EventArgs e)
         {
+            // 変数
 
+
+            // 日付表示
+            LabelDateTimeNow.Text = DateTime.Now.ToString("yyyy/MM/dd HH:MM:SS");
+            
         }
     }
 
