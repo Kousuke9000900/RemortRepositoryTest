@@ -20,15 +20,25 @@ namespace MaintenanceOfCustomerData
             {
                 // 接続文字列の構築
                 SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder();
+                sqlConnectionStringBuilder.DataSource = Constant.DATASOURCE;
+                sqlConnectionStringBuilder.UserID = Constant.USERID;
+                sqlConnectionStringBuilder.Password = Constant.PASSWORD;
+                sqlConnectionStringBuilder.InitialCatalog = Constant.INITIALCATALOG;
 
-                sqlConnectionStringBuilder.DataSource = Constant
+                // SQL Serverに接続
+                Console.WriteLine(Constant.CONNECTIONMESSAGE);
+                using (SqlConnection sqlConnection = new SqlConnection(sqlConnectionStringBuilder.ConnectionString))
+                {
+                    sqlConnection.Open();
+                    Console.WriteLine(Constant.SUCCESSMESSAGE);
+                }
 
             } catch(SqlException e)
             {
                 Console.WriteLine(e.ToString());
+                // エラー用のクラスを作る
+                Environment.Exit(0); // 強制終了
             }
-
-            Console.WriteLine("SQL Serverへの接続が成功しました。");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
