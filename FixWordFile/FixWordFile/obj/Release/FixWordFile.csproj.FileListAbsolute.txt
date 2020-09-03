@@ -1,0 +1,8 @@
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\bin\Release\FixWordFile.exe.config
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\bin\Release\FixWordFile.exe
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\bin\Release\FixWordFile.pdb
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\obj\Release\FixWordFile.csproj.ResolveComReference.cache
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\obj\Release\FixWordFile.csproj.CoreCompileInputs.cache
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\obj\Release\FixWordFile.exe
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\obj\Release\FixWordFile.pdb
+C:\Users\KSaihara\Desktop\必要情報まとめ\電子カルテ\実験\FixWordFile\FixWordFile\obj\Release\FixWordFile.csprojAssemblyReference.cache
