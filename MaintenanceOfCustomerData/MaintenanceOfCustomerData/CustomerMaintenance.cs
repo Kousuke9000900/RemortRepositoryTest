@@ -36,9 +36,10 @@ namespace MaintenanceOfCustomerData
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonSearch_Click(object sender, EventArgs e)
+        private void ButtonSearchClick(object sender, EventArgs e)
         {
             // エラーが無いかチェック(文字数制限、バイト数制限)
+
 
             // SQL文を作成（テキストファイルで外部から読込）
             FetchMasterCustomer();
@@ -54,7 +55,7 @@ namespace MaintenanceOfCustomerData
         private string FetchMasterCustomer()
         {
             // ファイルを取得
-            string FilePath = Application.LocalUserAppDataPath + @"GitHubLocalRepository/RemortRepositoryTest/MaintenanceOfCustomerData/SQL/SELECT master_customer.sql";
+            string FilePath = Application.LocalUserAppDataPath;
 
             // SQL文
             string SQLQuery = File.ReadAllText(FilePath);

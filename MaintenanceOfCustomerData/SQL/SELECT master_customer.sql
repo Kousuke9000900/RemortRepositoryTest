@@ -7,3 +7,5 @@ SELECT
 ,   remark
 FROM
     master_customer
+WHERE
+    name = 
