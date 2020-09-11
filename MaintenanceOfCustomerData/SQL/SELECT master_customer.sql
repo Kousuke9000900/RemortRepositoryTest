@@ -8,4 +8,4 @@ SELECT
 FROM
     master_customer
 WHERE
-    name = 
+    name = "{0}"

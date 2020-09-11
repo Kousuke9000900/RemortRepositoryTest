@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Collections;
+using MaintenanceOfCustomerData.Model;
 
 namespace MaintenanceOfCustomerData
 {
@@ -42,24 +43,10 @@ namespace MaintenanceOfCustomerData
 
 
             // SQL文を作成（テキストファイルで外部から読込）
-            FetchMasterCustomer();
+            DAO.Fetchmaster_customer(TextCustomerName.Text);
 
             // 結果をデータグリッドビューに貼り付け
 
-        }
-
-        /// <summary>
-        /// master_customerテーブルから結果を取得
-        /// </summary>
-        /// <returns></returns>
-        private string FetchMasterCustomer()
-        {
-            // ファイルを取得
-            string FilePath = Application.LocalUserAppDataPath;
-
-            // SQL文
-            string SQLQuery = File.ReadAllText(FilePath);
-            return SQLQuery;
         }
 
         ///// <summary>
