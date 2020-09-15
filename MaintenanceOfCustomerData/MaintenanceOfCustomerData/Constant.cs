@@ -15,5 +15,10 @@
         public const string CONNECTIONMESSAGE = "SQL Serverに接続しています...";
         public const string SUCCESSMESSAGE = "SQL Serverへの接続に成功しました。";
         public const string FAILUREMESSAGE = "SQL Serverへの接続に失敗しました。";
+
+        // 各種エラーメッセージ
+        public const string FILENOTFOUNDEXCEPTIONMESSAGE = "ファイルが見つかりません。";
+        public const string SQLEXCEPTIONMESSAGE = "SQL Serverでエラーが発生しました。アプリケーションを終了します。";
+
     }
 }

@@ -28,7 +28,7 @@ namespace MaintenanceOfCustomerData
         private void CustomerMaintenance_Load(object sender, EventArgs e)
         {
             // 日付表示
-            LabelDateTimeNow.Text = DateTime.Now.ToString("yyyy/MM/dd HH:MM:SS");
+            LabelDateTimeNow.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             
         }
 
@@ -41,22 +41,11 @@ namespace MaintenanceOfCustomerData
         {
             // エラーが無いかチェック(文字数制限、バイト数制限)
 
-
-            // SQL文を作成（テキストファイルで外部から読込）
-            DAO.Fetchmaster_customer(TextCustomerName.Text);
-
-            // 結果をデータグリッドビューに貼り付け
+            // SQL文を実行・結果を貼り付け
+            Model.master_customerDAO master_CustomerDAO = new master_customerDAO();
+            GridMasterCustomer.DataSource = master_CustomerDAO.Fetchmaster_customer(TextCustomerName.Text,TextBranchName.Text);
 
         }
-
-        ///// <summary>
-        ///// customer_informationテーブルから結果を取得
-        ///// </summary>
-        ///// <returns></returns>
-        //private string FetchCustomerInformation()
-        //{
-
-        //}
 
         ///// <summary>
         ///// 入力項目にエラーが無いか確認する

@@ -35,10 +35,10 @@
             this.GridMasterCustomer = new System.Windows.Forms.DataGridView();
             this.ButtonSearch = new System.Windows.Forms.Button();
             this.LabelCustomerInformation = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GridCustomerInformation = new System.Windows.Forms.DataGridView();
             this.LabelDateTimeNow = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridMasterCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridCustomerInformation)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelCustomerName
@@ -84,10 +84,13 @@
             // GridMasterCustomer
             // 
             this.GridMasterCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridMasterCustomer.ColumnHeadersVisible = false;
             this.GridMasterCustomer.Location = new System.Drawing.Point(8, 72);
             this.GridMasterCustomer.Name = "GridMasterCustomer";
+            this.GridMasterCustomer.ReadOnly = true;
+            this.GridMasterCustomer.RowHeadersVisible = false;
             this.GridMasterCustomer.RowTemplate.Height = 21;
-            this.GridMasterCustomer.Size = new System.Drawing.Size(620, 440);
+            this.GridMasterCustomer.Size = new System.Drawing.Size(628, 440);
             this.GridMasterCustomer.TabIndex = 4;
             // 
             // ButtonSearch
@@ -111,23 +114,26 @@
             this.LabelCustomerInformation.TabIndex = 6;
             this.LabelCustomerInformation.Text = "取引先情報";
             // 
-            // dataGridView1
+            // GridCustomerInformation
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 552);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 260);
-            this.dataGridView1.TabIndex = 7;
+            this.GridCustomerInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridCustomerInformation.ColumnHeadersVisible = false;
+            this.GridCustomerInformation.Location = new System.Drawing.Point(8, 552);
+            this.GridCustomerInformation.Name = "GridCustomerInformation";
+            this.GridCustomerInformation.ReadOnly = true;
+            this.GridCustomerInformation.RowHeadersVisible = false;
+            this.GridCustomerInformation.RowTemplate.Height = 21;
+            this.GridCustomerInformation.Size = new System.Drawing.Size(628, 260);
+            this.GridCustomerInformation.TabIndex = 7;
             // 
             // LabelDateTimeNow
             // 
             this.LabelDateTimeNow.AutoSize = true;
             this.LabelDateTimeNow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabelDateTimeNow.Font = new System.Drawing.Font("ＭＳ ゴシック", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LabelDateTimeNow.Font = new System.Drawing.Font("ＭＳ ゴシック", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LabelDateTimeNow.Location = new System.Drawing.Point(412, 8);
             this.LabelDateTimeNow.Name = "LabelDateTimeNow";
-            this.LabelDateTimeNow.Size = new System.Drawing.Size(121, 21);
+            this.LabelDateTimeNow.Size = new System.Drawing.Size(133, 23);
             this.LabelDateTimeNow.TabIndex = 8;
             this.LabelDateTimeNow.Text = "DateTimeNow";
             // 
@@ -135,9 +141,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 821);
+            this.ClientSize = new System.Drawing.Size(644, 821);
             this.Controls.Add(this.LabelDateTimeNow);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.GridCustomerInformation);
             this.Controls.Add(this.LabelCustomerInformation);
             this.Controls.Add(this.ButtonSearch);
             this.Controls.Add(this.GridMasterCustomer);
@@ -149,7 +155,7 @@
             this.Text = "取引先マスタ";
             this.Load += new System.EventHandler(this.CustomerMaintenance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridMasterCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridCustomerInformation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,7 +170,7 @@
         private System.Windows.Forms.DataGridView GridMasterCustomer;
         private System.Windows.Forms.Button ButtonSearch;
         private System.Windows.Forms.Label LabelCustomerInformation;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView GridCustomerInformation;
         private System.Windows.Forms.Label LabelDateTimeNow;
     }
 }

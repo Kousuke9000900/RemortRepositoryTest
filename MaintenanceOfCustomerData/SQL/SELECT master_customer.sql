@@ -8,4 +8,5 @@ SELECT
 FROM
     master_customer
 WHERE
-    name = "{0}"
+    name LIKE '%{0}%'
+AND branch_name LIKE '%{1}%'
