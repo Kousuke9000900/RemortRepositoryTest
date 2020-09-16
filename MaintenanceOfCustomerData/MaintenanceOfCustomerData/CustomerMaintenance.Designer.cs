@@ -84,7 +84,6 @@
             // GridMasterCustomer
             // 
             this.GridMasterCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridMasterCustomer.ColumnHeadersVisible = false;
             this.GridMasterCustomer.Location = new System.Drawing.Point(8, 72);
             this.GridMasterCustomer.Name = "GridMasterCustomer";
             this.GridMasterCustomer.ReadOnly = true;

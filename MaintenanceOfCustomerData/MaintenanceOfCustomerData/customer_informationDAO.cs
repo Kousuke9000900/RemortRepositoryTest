@@ -7,16 +7,17 @@ using System.Windows.Forms;
 
 namespace MaintenanceOfCustomerData.Model
 {
-    public class master_customerDAO
+    class customer_informationDAO
     {
+
         /// <summary>
-        /// master_customerからデータを取り出す
-        /// </summary>
-        /// <param>textCustomerName:画面内に入力された取引先名 textBranchName:画面内に入力された支店名</param>
+        /// customer_informationからデータを取り出す
+        /// <param>customerId:取引先ID（条件句）</param>
         /// <returns>dataOfmaster_customer:検索結果を格納したデータ</returns>
-        /// <remarks>master_customerテーブルからデータを取り出す際に使用</remarks>
-        public DataTable Fetchmaster_customer(String textCustomerName, String textBranchName)
+        /// </summary>
+        public DataTable Fetchcustomer_information(string customerId)
         {
+
             // データテーブル
             DataTable dataOfmaster_customer = new DataTable();
 
@@ -37,21 +38,24 @@ namespace MaintenanceOfCustomerData.Model
                     String SQLQuery = streamReader.ReadToEnd();
 
                     // SQL文を設定
-                    SQLQuery = SQLQuery.Replace("{0}", textCustomerName);   // 取引先名
-                    SQLQuery = SQLQuery.Replace("{1}", textBranchName);     // 支店名
+                    SQLQuery = SQLQuery.Replace("{0}", customerId);   // 取引先ID
                     command.CommandText = SQLQuery;
 
                     // SQL文を実行
                     var adapter = new SqlDataAdapter(command);
                     adapter.Fill(dataOfmaster_customer);
 
-                } catch (FileNotFoundException e) {
+                }
+                catch (FileNotFoundException e)
+                {
 
                     Console.WriteLine(e.Message);
-                    MessageBox.Show(Constant.FILENOTFOUNDEXCEPTIONMESSAGE,"エラー",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show(Constant.FILENOTFOUNDEXCEPTIONMESSAGE, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return null;
 
-                } finally {
+                }
+                finally
+                {
 
                     // データベースの接続終了
                     sqlConnection.Close();
@@ -60,6 +64,8 @@ namespace MaintenanceOfCustomerData.Model
             }
 
             return dataOfmaster_customer;
+
         }
+
     }
 }

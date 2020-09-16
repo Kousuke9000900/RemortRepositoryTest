@@ -1,5 +1,6 @@
 SELECT
-    name
+    id
+,   name
 ,   branch_name
 ,   postal_code
 ,   telephone_number

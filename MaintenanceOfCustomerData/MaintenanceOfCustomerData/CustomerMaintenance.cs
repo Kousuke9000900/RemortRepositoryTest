@@ -39,24 +39,14 @@ namespace MaintenanceOfCustomerData
         /// <param name="e"></param>
         private void ButtonSearchClick(object sender, EventArgs e)
         {
-            // エラーが無いかチェック(文字数制限、バイト数制限)
 
             // SQL文を実行・結果を貼り付け
-            Model.master_customerDAO master_CustomerDAO = new master_customerDAO();
+            Model.master_customerDAO master_CustomerDAO = new master_customerDAO();                 // インスタンス化
+            Model.customer_informationDAO Customer_InformationDAO = new customer_informationDAO();  // インスタンス化
             GridMasterCustomer.DataSource = master_CustomerDAO.Fetchmaster_customer(TextCustomerName.Text,TextBranchName.Text);
+            String currentCustomerId = GridMasterCustomer.CurrentCell.Value.ToString();             // 文字列に変換
+            GridCustomerInformation.DataSource = Customer_InformationDAO.Fetchcustomer_information(currentCustomerId);
 
         }
-
-        ///// <summary>
-        ///// 入力項目にエラーが無いか確認する
-        ///// 確認項目:入力された文字列の合計バイト数（40バイト以内）
-        ///// </summary>
-        ///// <returns></returns>
-        //private Boolean ValidateAnyError()
-        //{
-
-        //}
-    }
-
-    
+    }    
 }
