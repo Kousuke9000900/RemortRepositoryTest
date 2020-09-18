@@ -6,10 +6,10 @@
     static class Constant
     {
         // SQL Serverの接続文字列用
-        public const string DATASOURCE = "インスタンス名";    // インスタンス名
-        public const string USERID = "ユーザーID";         // ログインユーザーID
-        public const string PASSWORD = "パスワード";    // ログインパスワード
-        public const string INITIALCATALOG = "データベース";  // 使用データベース
+        public const string DATASOURCE = "任意のインスタンス名";    // インスタンス名
+        public const string USERID = "任意のユーザーID";         // ログインユーザーID
+        public const string PASSWORD = "任意のログインパスワード";    // ログインパスワード
+        public const string INITIALCATALOG = "任意のデータベース";  // 使用データベース
 
         // SQL Serverの接続メッセージ
         public const string CONNECTIONMESSAGE = "SQL Serverに接続しています...";

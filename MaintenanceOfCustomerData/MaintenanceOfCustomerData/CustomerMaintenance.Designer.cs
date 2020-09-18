@@ -60,6 +60,7 @@
             this.TextCustomerName.Name = "TextCustomerName";
             this.TextCustomerName.Size = new System.Drawing.Size(288, 22);
             this.TextCustomerName.TabIndex = 1;
+            this.TextCustomerName.Validated += new System.EventHandler(this.TextCustomerNameValidated);
             // 
             // TextBranchName
             // 
@@ -69,6 +70,7 @@
             this.TextBranchName.Name = "TextBranchName";
             this.TextBranchName.Size = new System.Drawing.Size(288, 22);
             this.TextBranchName.TabIndex = 3;
+            this.TextBranchName.TextChanged += new System.EventHandler(this.TextBranchName_TextChanged);
             // 
             // LabelBranchName
             // 
@@ -91,6 +93,7 @@
             this.GridMasterCustomer.RowTemplate.Height = 21;
             this.GridMasterCustomer.Size = new System.Drawing.Size(628, 440);
             this.GridMasterCustomer.TabIndex = 4;
+            this.GridMasterCustomer.SelectionChanged += new System.EventHandler(this.GridMasterCustomerSelectionChanged);
             // 
             // ButtonSearch
             // 
@@ -116,7 +119,6 @@
             // GridCustomerInformation
             // 
             this.GridCustomerInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridCustomerInformation.ColumnHeadersVisible = false;
             this.GridCustomerInformation.Location = new System.Drawing.Point(8, 552);
             this.GridCustomerInformation.Name = "GridCustomerInformation";
             this.GridCustomerInformation.ReadOnly = true;

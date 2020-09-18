@@ -33,7 +33,7 @@ namespace MaintenanceOfCustomerData.Model
                 try
                 {
                     // SQL文の読み取り
-                    StreamReader streamReader = new StreamReader(@"任意のファイルパス", Encoding.GetEncoding("UTF-8"));
+                    StreamReader streamReader = new StreamReader(@"任意のSQLファイルパス", Encoding.GetEncoding("UTF-8"));
                     String SQLQuery = streamReader.ReadToEnd();
 
                     // SQL文を設定
